@@ -12,11 +12,14 @@ interface Props {
 }
 
 const ExchangeResultItemComponent: React.FC<Props> = ({
-    amount = 0,
-    from = '',
-    to = '',
-    result = 0,
+    amount,
+    from,
+    to,
+    result,
 }) => {
+    if (!amount || !from || !to || !result) {
+        return <></>
+    }
     return (
         <div className={styles.resultWrapper}>
             {amount} <b>{from}</b> = {result} <b>{to}</b>
