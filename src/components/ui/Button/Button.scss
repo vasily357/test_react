@@ -1,0 +1,97 @@
+.button {
+    border: 1px solid;
+    padding: 0 15px;
+    height: 32px;
+
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    overflow: hidden;
+    transition-duration: 0.3s;
+    transition-property: color, background-color;
+    border-radius: 3px;
+
+    &.green {
+        background: $--green;
+        border-color: $--green;
+
+        &:hover {
+            background: $--green2;
+            border-color: $--green2;
+        }
+    }
+
+    &.green-white {
+        background: $--green;
+        color: $--white;
+        border-color: $--green;
+
+        &:hover {
+            background: $--white;
+            color: $--green;
+            border-color: $--green2;
+        }
+    }
+
+    &.white-green {
+        background: $--white;
+        color: $--green;
+        border-color: $--green;
+
+        &:hover {
+            background: $--green;
+            color: $--white;
+            border-color: $--green3;
+        }
+    }
+
+    &.red-white {
+        color: $--white;
+        background: $--red;
+        border-color: $--red;
+
+        &:hover {
+            color: $--red;
+            background: $--white;
+            border-color: $--red;
+        }
+    }
+
+    &.white-red {
+        color: $--red;
+        background: $--white;
+        border-color: $--red;
+
+        &:hover {
+            color: $--white;
+            background: $--red;
+            border-color: $--red;
+        }
+    }
+
+    &.blue-white {
+        color: $--white;
+        background: $--darkBlue;
+        border-color: $--darkBlue;
+
+        &:hover {
+            color: $--darkBlue;
+            background: $--white;
+            border-color: $--darkBlue;
+        }
+    }
+
+    &.white-blue {
+        color: $--darkBlue;
+        background: $--white;
+        border-color: $--darkBlue;
+
+        &:hover {
+            color: $--white;
+            background: $--darkBlue;
+            border-color: $--darkBlue;
+        }
+    }
+}
+
+.button:hover {
+    cursor: pointer;
+}
